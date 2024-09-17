@@ -1,0 +1,11 @@
+[
+    { "personId": 1,
+     "relationId": 2, 
+     "relationType": "Friend" 
+    },
+    { 
+    "personId": 2, 
+    "relationId": 1, 
+    "relationType": "Friend" 
+}
+  ]
