@@ -1,12 +1,9 @@
-import '../styles/globals.css';
-// Bring in the BootStrap css File
-import  '../styles/bootstrap.min.css';
- 
-// define our nextjs myApp
-function myApp({Component, pageProps}){
-    return(
-        <Component{...pageProps} />
-    );
+// pages/_app.js
+import '../styles/bootstrap.min.css';
+import '../styles/globals.css'; // Your custom styles if you have any
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
 
-export default myApp;
+export default MyApp;
