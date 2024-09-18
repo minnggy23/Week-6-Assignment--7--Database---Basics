@@ -11,19 +11,19 @@
      "birthday" : "11/8/35",
       "related": [1] 
     },
-    { "id": 2, 
+    { "id": 3, 
     "name": " Bell Beast",
      "age": 55,
      "birthday" : "06/10/77",
       "related": [3] 
     },
-    { "id": 1, 
+    { "id":4, 
     "name": "Ron Wright", 
     "age": 42,
     "birthday" : "03/18/45",
      "related": [4] 
     },
-    { "id": 1, 
+    { "id": 5, 
     "name": "Harry Potter", 
     "age": 17,
     "birthday" : "02/13/77",
