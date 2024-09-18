@@ -27,6 +27,7 @@ export default function Entry({itemData}){
                     <h5 className="card-title">Name: {itemData.name}</h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">Birthday: {itemData.birthday}</h6>
                     <p className="card-text">Age: {itemData.age}</p>
+                    <p className="card-text">{itemData.relationType}</p>
             
                 </div>
             </article>    

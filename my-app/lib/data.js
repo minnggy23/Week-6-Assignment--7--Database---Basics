@@ -6,9 +6,10 @@ const dataDir = path.join(process.cwd(), 'data');
 export function getSortedList(){
 
     const filePath = path.join(dataDir,'persons.json');
+    const filePath2 = path.join(dataDir,'relations.json');
 
     const jsonString = fs.readFileSync(filePath, "utf8");
-    ///const relationData= fs.readFileSync(filePath2, "utf8");
+    const relationData= fs.readFileSync(filePath2, "utf8");
     const jsonObj =  JSON.parse(jsonString);
 
     jsonObj.sort(
@@ -29,10 +30,10 @@ export function getSortedList(){
 
 export function getAllIds(){
     const filePath = path.join(dataDir,'persons.json');
-    //const filePath2 = path.join(dataDir,'relations.json');
+    const filePath2 = path.join(dataDir,'relations.json');
    
     const jsonString = fs.readFileSync(filePath, "utf8");
-    //const relationData = fs.readFileSync(filePath2, "utf8");
+    const relationData = fs.readFileSync(filePath2, "utf8");
 
     const jsonObj =  JSON.parse(jsonString);
 
@@ -51,9 +52,10 @@ export function getAllIds(){
 
 export async function getData(idRequested) {
     const filePath = path.join(dataDir,'persons.json');
+    const filePath2 = path.join(dataDir,'relations.json');
 
     const jsonString = fs.readFileSync(filePath, "utf8");
-
+    
     const jsonObj =  JSON.parse(jsonString);
   
     const objMatch = jsonObj.filter(
