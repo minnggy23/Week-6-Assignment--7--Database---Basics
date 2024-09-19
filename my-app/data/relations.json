@@ -5,7 +5,22 @@
     },
     { 
     "personId": 2, 
-    "relationId": 1, 
+    "relationId": 5, 
     "relationType": "Friend" 
+},
+{ 
+  "personId": 3, 
+  "relationId": 4, 
+  "relationType": "Friend" 
+},
+{ 
+  "personId": 4, 
+  "relationId": 5, 
+  "relationType": "Friend" 
+},
+{ 
+  "personId": 5, 
+  "relationId": 4, 
+  "relationType": "Friend" 
 }
   ]

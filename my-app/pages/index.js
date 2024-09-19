@@ -1,6 +1,6 @@
 import Link from "next/link.js";
 import Layout from "../components/layout.js";
-import { getSortedList } from "../lib/data.js";
+import { getSortedList } from "../lib/persons.js";
 
 export async function getStaticProps(){
     const allData =getSortedList();
