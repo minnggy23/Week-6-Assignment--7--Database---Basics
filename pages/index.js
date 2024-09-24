@@ -1,3 +1,5 @@
+import '../testing-library/jest-dom';
+//import { render, screen } from '../testing-library/react'
 import Link from "next/link.js";
 import Layout from "../components/layout.js";
 import { getSortedList } from "../lib/persons.js";
@@ -16,7 +18,7 @@ export default function Home({allData}){
         <Layout home>
         <h1>List of Names.</h1>
         <div className="list-group">
-            {allData.map(
+            {allData && allData.map(
                 ({id, name}) => (
                     <Link key={id} href={`/${id}`} className="list-group-item list-group-item-action">
                         {name}
