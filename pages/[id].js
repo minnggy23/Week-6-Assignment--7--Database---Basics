@@ -1,6 +1,6 @@
 import Layout from '../components/layout';
-import { getAllIds, getData } from '../lib/persons';
-import {getRelationsForPerson} from '../lib/relations';
+import { getAllIds, getData } from '../lib/data-firebase';
+//import {getRelationsForPerson} from '../lib/relations';
 
 export async function getStaticProps( { params } ) {
   
