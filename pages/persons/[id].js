@@ -1,6 +1,6 @@
-import Layout from '../components/layout';
-import { getAllIds, getData } from '../lib/data-firebase';
-//import {getRelationsForPerson} from '../lib/relations';
+import Layout from '../../components/layout';
+import { getAllIds, getData } from '../../lib/data-firebase';
+import {getRelationsForPerson} from '../../lib/relations';
 
 export async function getStaticProps( { params } ) {
   
@@ -26,7 +26,7 @@ export async function getStaticProps( { params } ) {
 
 
 export async function getStaticPaths() {
-  const paths = getAllIds();
+  const paths = await getAllIds();
   return {
     paths,
     fallback: false
